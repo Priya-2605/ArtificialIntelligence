@@ -1,0 +1,13 @@
+def print_positive_numbers(start, end):
+    if start < 0 or end < 0:
+        print("Both start and end values should be positive.")
+    else:
+        for num in range(start, end + 1):
+            print(num)
+
+
+start_range = int(input("Enter the starting value of the range: "))
+end_range = int(input("Enter the ending value of the range: "))
+
+print("Positive numbers in the range:")
+print_positive_numbers(start_range, end_range)
